@@ -15,7 +15,7 @@
           <div class="hero-background"></div>
           <header class="title">
             Hello, I'm <span class="name">Vladyslav Rechkoblit.</span> <br>
-            I'm front-end web developer. <br>
+            I'm front-end web developer.
             <a class="px-3" href="#projects">View my work</a>
           </header>
       </div>
@@ -189,83 +189,5 @@
       <script src="src/js/popper.min.js"></script>
       <script src="src/js/bootstrap.min.js"></script>
 
-      <script>
-        window.sr = ScrollReveal();
-        sr.reveal('#aboutMe', {
-          duration:800,
-          origin:'bottom'
-        });
-        sr.reveal('#aboutTitle', {
-          duration:1000,
-          origin:'left',
-          distance:"1200px"
-        });
-
-        sr.reveal('#article1', {
-          duration:1000,
-          delay:300,
-          origin:'bottom',
-          distance:'600px'
-        });
-        sr.reveal('#article2', {
-          duration:1000,
-          delay:600,
-          origin:'bottom',
-          distance:'600px'
-        });
-        sr.reveal('#article3', {
-          duration:1000,
-          delay:900,
-          origin:'bottom',
-          distance:'600px'
-        });
-        sr.reveal('.aqua', {
-          duration:1000,
-          origin:'bottom',
-          delay:200,
-        });
-        sr.reveal('.pink', {
-          duration:1000,
-          origin:'bottom',
-          delay:400,
-        });
-        sr.reveal('.yellow', {
-          duration:1000,
-          origin:'bottom',
-          delay:600,
-        });
-        sr.reveal('.brown', {
-          duration:1000,
-          origin:'bottom',
-          delay:800,
-        });
-        sr.reveal('.red', {
-          duration:1000,
-          origin:'bottom',
-          delay:900,
-        });
-        sr.reveal('#projects', {
-          duration:2000,
-          origin:'bottom'
-        });
-      </script>
-
-      <script>
-    $(function() {
-      // Smooth Scrolling
-      $('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html, body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
-    });
-    </script>
     </body>
 </html>
